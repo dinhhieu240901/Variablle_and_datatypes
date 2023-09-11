@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tính chu vi hình tròn</title>
+  </head>
+  <body>
+    <input type="number" placeholder="Nhập bán kính hình tròn: " id="r" />
+    <button onclick="circlePerimeter()" id="button">Submit</button>
+    <p id="result"></p>
+
+    <script>
+      function circlePerimeter() {
+        let R = +document.getElementById("r").value;
+        let P = R * 2 * 3.14;
+        document.getElementById("result").innerHTML =
+          "Chu vi hình tròn là " + P;
+      }
+    </script>
+  </body>
+</html>
